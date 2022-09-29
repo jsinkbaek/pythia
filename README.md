@@ -17,7 +17,11 @@ Can be installed using pip. From the base package directory (the one with folder
 `pip install .`
 
 Make sure that the dependencies are functional beforehand. F.ex., that the correct version of theano-pymc is used for pymc3.
+If you have problems with theano, try (in a terminal with your python environment sourced):
 
+`pip uninstall theano`
+`pip uninstall theano-pymc`
+`pip install theano-pymc`
 
 ### TO DO:
   - Generalize handling of priors
