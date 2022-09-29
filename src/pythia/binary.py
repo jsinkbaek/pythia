@@ -1,7 +1,8 @@
 ## Series of functions to generate effective models of eclipsing binary signals
 import numpy as np
 
-from pythia.resampling import sort_on_x, run_binning
+from pythia.general import sort_on_x
+from pythia.resampling import run_binning
 from pythia.conversions import time_to_ph
 from scipy.interpolate import PchipInterpolator
 
