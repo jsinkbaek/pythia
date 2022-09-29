@@ -23,6 +23,16 @@ If you have problems with theano, try (in a terminal with your python environmen
 `pip uninstall theano-pymc`
 `pip install theano-pymc`
 
+
+Be aware that the import statements are slightly different than before, as all the function files are in the root package folder.
+So now, for example, importing LS_periodograms would be
+
+`from pythia.periodograms import LS_periodograms`
+
+instead of
+
+`from pythia.timeseries.periodograms import LS_periodograms`
+
 ### TO DO:
   - Generalize handling of priors
   - Include GUI support
