@@ -1,6 +1,13 @@
 import numpy as np
 
 
+def sort_on_x(x,y,z):
+    zipped = list(zip(x,y,z))
+    zipped.sort(key=lambda x:x[0])
+    x,y,z = list(zip(*zipped))
+    return x,y,
+
+
 def run_binning(x,y,yerr=None,phStart=-0.5,phStop=0.5,nbins=100):
     # Binning function -- takes into account aliasing and error
     # propogation on errorbins
